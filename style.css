@@ -1,0 +1,903 @@
+/* h1,h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: rgba(245, 245, 245, 0.805);
+    font-size: 70px;
+}
+h2 {
+    color:rgba(240, 248, 255, 0.805);
+    font-size: 40px;
+}
+h3 {
+    color:white;
+    font-size:50px;
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    border-style: dashed;
+}
+a:active {
+    background-color: #ffffff80;
+} */
+
+body {
+    margin: 0;
+    padding: 0px;
+    min-width: none;
+    min-height: 100vh;
+}
+
+nav a:link {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.637);
+    font-weight: lighter;
+}
+
+nav a:visited {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.637);
+    font-weight: lighter;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.929);
+    text-shadow: 2px 2px 3px #ffffffac;
+}
+
+nav a:active {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.929)
+}
+
+
+
+.home {
+    background-attachment: fixed;
+    background-image: url('imges/Miriam Espacio图片.jpeg');
+    /* background-position: 0px 50; */
+}
+
+.title {
+    /* width:auto;
+    height: auto; */
+    margin: 0;
+    padding-top: 60vh;
+    padding-left: 5vw;
+    min-height: 40vh;
+    /* background-color: #e3e3e380; */
+}
+
+.hi {
+    font-size: 40px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.584);
+    font-weight: lighter;
+}
+
+.loftname {
+    font-size: 70px;
+    margin: 0px;
+    font-family:"宋体",SimSun,sans-serif;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.backpage {
+    background-color: #00000083;
+    margin: 10px 50px;
+    padding: 20px 40px;
+}
+
+.rooms {
+    display: block;
+    margin: 40px auto;
+    padding: 0px 50px;
+    text-align: center;
+}
+
+/* .rooma{
+    width: 200px;
+    height: 100px;
+} */
+.room-a {
+    display: inline-block;
+    width: 280px;
+    height: 290px;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.room-a:hover {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+}
+
+.room-a:active {
+
+    background-color: rgba(255, 255, 255, 0.504);
+}
+
+.a-room {
+    background-color: rgba(0, 255, 255, 0);
+    /* box-shadow:0 0 10px rgb(255, 255, 255) ; */
+    width: 200px;
+    height: 250px;
+    padding: 20px 40px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.roomicon {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: inline-block;
+    /* position: absolute;
+    left: 50px;
+    top:50px;*/
+}
+
+.roomname {
+    font-size: 40px;
+    font-family: "宋体",SimSun,sans-serif;
+    color: rgba(255, 255, 255, 0.862);
+    margin: 0px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.intropage {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+
+}
+
+.intro {
+    color: #ffffffc6;
+    font-size: 20px;
+    font-family: "宋体",SimSun,sans-serif;
+    font-weight: lighter;
+}
+
+.intro2 {
+    color: #ffffffe7;
+    font-size: 20px;
+    font-family: "宋体",SimSun,sans-serif;
+    font-weight: lighter;
+    text-shadow: 1px 1px 5px #ffffff9b;
+}
+
+.intro3 {
+    color: #ffffffe5;
+    font-size: 20px;
+    font-family: "宋体",SimSun,sans-serif;
+    font-weight: lighter;
+}
+
+.background-img {
+    z-index: -3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    background-repeat: repeat-x;
+    transition: opacity 1s, transform .25s, filter .25s;
+    backface-visibility: hidden;
+}
+
+.background-img2 {
+    z-index: -3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: repeat-x;
+    transition: opacity 1s, transform .25s, filter .25s;
+    backface-visibility: hidden;
+}
+
+.cover {
+    z-index: -1;
+    /* opacity: 0; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.503) 0, rgba(0, 0, 0, .5) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, .3) 166%);
+}
+
+.study-home {
+
+    background-attachment: fixed;
+    background-image: url('imges/Miriam Espacio图片.jpeg');
+    background-size: cover;
+    /* background-position: 0px 50;
+        z-index: -3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    background-repeat: repeat-x;
+    transition: opacity 1s,transform .25s,filter .25s;
+    backface-visibility: hidden; */
+}
+
+.study-a {
+    display: block;
+    height: 180px;
+
+    
+    display: flex;
+    align-items: center;
+}
+
+.study-a:link {
+    text-decoration: none;
+}
+
+.study-a:visited {
+    text-decoration: none;
+}
+
+.study-a:hover {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+}
+
+.study-a:active {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+    background-color: rgba(255, 255, 255, 0.504);
+}
+
+.studylist {
+    margin: 20px auto;
+    width: 800px;
+    min-height: 800px;
+}
+
+.study-item {
+    margin: 10px 20px;
+    padding: 55px;
+    /* padding-left: 170px; */
+    font-size: 40px;
+    color: #ffffffec;
+    font-family: "宋体",SimSun,sans-serif;
+    font-weight: lighter;
+    text-shadow: 2px 2px 5px #ffffff65;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+}
+.study-name{
+    padding: 30px;
+}
+
+.study-icon {
+    display: inline-block;
+    /* margin-top: 5px; */
+    width: 60px;
+    /* position: absolute; 
+    left: 80px;
+    top: 40px;*/
+}
+
+.bookshelf-home {
+    background-attachment: fixed;
+    background-image: url('imges/书架-2.jpg');
+    background-size: cover;
+}
+
+.bookname {
+    font-size: 25px;
+    font-family: "宋体",SimSun,sans-serif;
+    color: #ffffffdf;
+    text-align: center;
+}
+
+.HW-home {
+    background-attachment: fixed;
+    background-image: url('imges/书架-2.jpg');
+    background-size: cover;
+}
+
+.HWname {
+    font-size: 20px;
+    font-family: "宋体",SimSun,sans-serif;
+    color: #e0e0e09d;
+    text-align: center;
+}
+
+.HW-cover-img {
+    height: 200px;
+    box-shadow: 2px 2px 5px 1px rgba(179, 179, 179, 0.5);
+}
+
+.HW-details {
+    display: inline-block;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.details-img {
+    height: 200px;
+    box-shadow: 0px 0px 3px 0px rgba(195, 195, 195, 0.648);
+}
+.words-home{
+    background-attachment: fixed;
+    background-image: url('imges/笔记-2.jpg');
+    background-size:cover;
+}
+
+.diy-room {
+    background-attachment: fixed;
+    background-image: url('imges/Miriam Espacio图片.jpeg');
+}
+.diy-cover{
+    /* background-color: rgba(255, 255, 255, 0.366); */
+    background-image: radial-gradient(rgba(221, 221, 221, 0.311) 0, rgba(254, 254, 254, 0.47) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);
+}
+.diyexh {
+    /* width: 90vw;
+    
+    background-color:#ffffff83;
+    margin:3vh 5vw;
+    padding: 2vh 5vw; */
+    width: 85vw;
+    min-height: 85vh;
+    background-color: #a0a0a037;
+    margin: 20px auto;
+    padding: 20px 40px;
+
+}
+
+.diylist {
+    margin: 40px auto;
+    width: 1000px;
+    min-height: 800px;
+}
+
+.workshead {
+    margin: 10px 20px;
+    padding: 10px;
+    font-size: 40px;
+    color: #ffffffec;
+    font-family: "宋体",SimSun,sans-serif;
+    font-weight: lighter;
+    text-shadow: 2px 2px 5px #38383877;
+}
+
+.works {
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.work {
+    display: inline-block;
+    padding: 5px;
+}
+
+.work-img {
+    height: 200px;
+    box-shadow: 0px 0px 3px 0px rgba(110, 110, 110, 0.5);
+}
+
+.machroom {
+    background-attachment: fixed;
+    background-image: url('imges/机关室pexels-pixabay-256477.jpg');
+    /* position: relative; */
+}
+
+.machexh {
+    width: 100vw;
+    height: 100vh;
+}
+
+.roads {
+    padding: 40px;
+}
+
+.friends-a {
+    display: flex;
+    align-items: center;
+    height: 180px;
+}
+
+.friends-a:link {
+    text-decoration: none;
+}
+
+.friends-a:visited {
+    text-decoration: none;
+}
+
+.friends-a:hover {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+}
+
+.friends-a:active {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+    background-color: rgba(255, 255, 255, 0.504);
+}
+
+.friends-item {
+    margin: 10px 20px;
+    padding: 55px;
+    padding-left: 100px;
+    font-size: 40px;
+    color: #ffffffec;
+    font-family: "宋体",SimSun,sans-serif;
+    font-weight: lighter;
+    text-shadow: 2px 2px 5px #2020206b;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.friends-icon {
+    display: inline-block;
+    width: 100px;
+    /* position: absolute;
+    left: 70px;
+    top: 40px; */
+    border-color: #4c4c4c77;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 5px 2px rgba(185, 185, 185, 0.504);
+}
+
+.friends-name{
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        background-attachment: fixed;
+        background-image: url('imges/Miriam Espacio图片.jpeg');
+        background-size: cover;
+        /* background-position: 0px 50; */
+    }
+
+    .title {
+        /* width:auto;
+        height: auto; */
+        margin: 0;
+        padding-top: 60vh;
+        padding-left: 5vw;
+        min-height: 40vh;
+        /* background-color: #e3e3e380; */
+    }
+
+    .hi {
+        font-size: 1em;
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgba(255, 255, 255, 0.584);
+        font-weight: lighter;
+    }
+
+    .loftname {
+        font-size: 2em;
+        margin: 0px;
+        font-family:"宋体",SimSun,sans-serif;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.83);
+    }
+
+    .backpage {
+        background-color: #00000083;
+        margin: 5px 20px;
+        padding: 5px 20px;
+    }
+
+    .rooms {
+        display: block;
+        margin: 5px auto;
+        padding: 0px 5px;
+        text-align: center;
+    }
+
+    /* .rooma{
+        width: 200px;
+        height: 100px;
+    } */
+    .room-a {
+        display: inline-block;
+        width: 120px;
+        height: 140px;
+        background-color: rgba(0, 255, 255, 0);
+    }
+
+    .room-a:hover {
+        box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.504);
+    }
+
+    .room-a:active {
+
+        background-color: rgba(255, 255, 255, 0.504);
+    }
+
+    .a-room {
+        background-color: rgba(0, 255, 255, 0);
+        /* box-shadow:0 0 10px rgb(255, 255, 255) ; */
+        width: 80px;
+        height: 100px;
+        padding: 5px 10px;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .roomicon {
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+        display: inline-block;
+        /* position: absolute;
+        left: 50px;
+        top:50px;*/
+    }
+
+    .roomname {
+        font-size: 20px;
+        font-family:"宋体",SimSun,sans-serif;
+        color: rgba(255, 255, 255, 0.862);
+        margin: 0px 0px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .intropage {
+        min-width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+
+    }
+
+    .intro {
+        color: #ffffffc6;
+        font-size: 20px;
+        font-family: "宋体",SimSun,sans-serif;
+        font-weight: lighter;
+    }
+
+    .intro2 {
+        color: #ffffffe7;
+        font-size: 20px;
+        font-family: "宋体",SimSun,sans-serif;
+        font-weight: lighter;
+        text-shadow: 1px 1px 5px #ffffff9b;
+    }
+
+    .intro3 {
+        color: #ffffffe5;
+        font-size: 20px;
+        font-family: "宋体",SimSun,sans-serif;
+        font-weight: lighter;
+    }
+
+    .background-img {
+        /* background-attachment: fixed;
+    background-image: url('imges/Miriam Espacio图片.jpeg'); */
+        z-index: -3;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        background-repeat: repeat-x;
+        transition: opacity 1s, transform .25s, filter .25s;
+        backface-visibility: hidden;
+    }
+
+    .background-img2 {
+        z-index: -3;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-repeat: repeat-x;
+        transition: opacity 1s, transform .25s, filter .25s;
+        backface-visibility: hidden;
+    }
+
+    .cover {
+        z-index: -1;
+        /* opacity: 0; */
+        position: fixed;
+        left: 0;
+        top: 0;
+        /* width: 100vw;
+        height: 100vh; */
+        background-image: radial-gradient(rgba(0, 0, 0, 0.503) 0, rgba(0, 0, 0, .5) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, .3) 166%);
+    }
+
+    .study-a {
+        /* display: block; */
+        height: 140px;
+    }
+
+    .study-a:link {
+        text-decoration: none;
+    }
+
+    .study-a:visited {
+        text-decoration: none;
+    }
+
+    .study-a:hover {
+        box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+    }
+
+    .study-a:active {
+        box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+        background-color: rgba(255, 255, 255, 0.504);
+    }
+
+    .studylist {
+        margin: 40px auto;
+        width: 80vw;
+        min-height: 80vh;
+    }
+
+    .study-item {
+        margin: 5px 10px;
+        padding: 20px;
+        padding-left:15vw;
+        font-size: 40px;
+        color: #ffffffec;
+        font-family: "宋体",SimSun,sans-serif;
+        font-weight: lighter;
+        text-shadow: 2px 2px 5px #ffffff65;
+        position: relative;
+
+    }
+
+    .study-icon {
+        display: inline-block;
+        margin-top: 0px;
+        width: 50px;
+        /* position: absolute;
+        left: 50px;
+        top: 20px; */
+    }
+
+    /* .bookshelf-home {
+        background-attachment: fixed;
+        background-image: url('imges/Miriam Espacio图片.jpeg');
+        background-size: cover;
+        position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 100%;
+    }
+.bookshelf-home:before {
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    background-size: cover;} */
+    .bookshelf-home {
+        background-attachment: fixed;
+        background-image: url('imges/小书架pexels-engin-akyurt-2767814.jpg');
+        background-size: cover;
+        /* background-position: 0px 50; */
+    }
+    .bookname {
+        font-size: 20px;
+        font-family: "宋体",SimSun,sans-serif;
+        color: #ffffffdf;
+        text-align: center;
+    }
+
+    .HW-home{
+        background-attachment: fixed;
+            background-image: url('imges/笔记pexels-lil-artsy-1132577.jpg');
+            background-size: cover;
+    }
+
+    .HWname {
+        font-size: 20px;
+        font-family: "宋体",SimSun,sans-serif;
+        color: #e0e0e09d;
+        text-align: center;
+    }
+
+    .HW-cover-img {
+        height: 200px;
+        box-shadow: 2px 2px 5px 1px rgba(179, 179, 179, 0.5);
+    }
+
+    .HW-details {
+        display: inline-block;
+        padding: 0 20px;
+        height: 100%;
+    }
+
+    .words-home{
+        background-attachment:fixed;
+        background-image: url('imges/笔记pexels-lil-artsy-1132577.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .details-img {
+        height: 200px;
+        box-shadow: 0px 0px 3px 0px rgba(195, 195, 195, 0.648);
+    }
+
+    .diy-room {
+        background-attachment: fixed;
+        background-image: url('imges/Miriam Espacio图片.jpeg');
+    }
+    .diy-cover{
+        /* background-color: rgba(255, 255, 255, 0.366); */
+        background-image: radial-gradient(rgba(221, 221, 221, 0.311) 0, rgba(254, 254, 254, 0.47) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);
+    }
+    .diyexh {
+        /* width: 90vw;
+    
+    background-color:#ffffff83;
+    margin:3vh 5vw;
+    padding: 2vh 5vw; */
+        width: 85vw;
+        min-height: 85vh;
+        background-color: #a0a0a037;
+        margin: 20px auto;
+        padding: 0px 0px;
+
+    }
+
+    .diylist {
+        margin: 5vh auto;
+        width: 80vw;
+    min-height: 85vh;
+    }
+
+    .workshead {
+        margin: 10px 20px;
+        padding: 10px;
+        font-size: 30px;
+        color: #ffffffec;
+        font-family: "宋体",SimSun,sans-serif;
+        font-weight: lighter;
+        text-shadow: 2px 2px 5px #38383877;
+    }
+    /* .textshadow2{
+        text-shadow: 2px 2px 5px #92929255;
+    } */
+
+    .works {
+        margin: 10px 20px;
+        padding: 10px;
+        max-width: 80vw;
+
+    }
+
+    .work {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .work-img {
+        height: 180px;
+        box-shadow: 0px 0px 3px 0px rgba(110, 110, 110, 0.5);
+    }
+
+    .machroom {
+        background-attachment: fixed;
+        background-image: url('imges/机关室pexels-pixabay-256477.jpg');
+        /* position: relative; */
+    }
+
+    .machexh {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .roads {
+        padding: 40px;
+    }
+
+    .friends-a {
+        display: block;
+        height: 90px;
+        width: 260px;
+    }
+
+    .friends-a:link {
+        text-decoration: none;
+    }
+
+    .friends-a:visited {
+        text-decoration: none;
+    }
+
+    .friends-a:hover {
+        box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+    }
+
+    .friends-a:active {
+        box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.504);
+        background-color: rgba(255, 255, 255, 0.504);
+    }
+
+    .friends-item {
+        margin: 5px 10px;
+        padding: 20px 0px;
+        /* padding-left: 20vw; */
+        padding-right: 0px;
+                font-size: 19px;
+        color: #ffffffec;
+        font-family: "宋体",SimSun,sans-serif;
+        font-weight: lighter;
+        text-shadow: 2px 2px 5px #2020206b;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .friends-icon {
+        display: inline-block;
+        width: 60px;
+        /* position: absolute;
+        left: 15px;
+        top:15px; */
+        border-color: #4c4c4c00;
+        border-style: solid;
+        border-width: 2px;
+        box-shadow: 1px 1px 5px 2px rgba(199, 199, 199, 0.573);
+    }
+    .friends-name{
+        padding: 20px;
+    }
+
+}
+
+/* .radial-cover {
+    background-image: radial-gradient(rgba(0,0,0,0) 0,rgba(0,0,0,.5) 100%),radial-gradient(rgba(0,0,0,0) 33%,rgba(0,0,0,.3) 166%);
+} */
+
+/* @media (max-width: 768px) {
+    h1 {
+    font-size: 3vw;
+    /* 当屏幕宽度小于768px时，字体大小改为相对于视口宽度的3% 
+    }
+    } */
