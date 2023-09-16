@@ -10,6 +10,11 @@
     </head>
 
     <body class="home">
+        
+        <div class="loader-box">
+            <img class="loader" src="imges/urlicon/icon-星星8.png" />
+        </div>
+        <img src="https://picsum.photos/1250/650" />
 
         <header class="title">
             <!-- <img class="background-img" src="imges\Miriam Espacio图片.jpeg" /> -->
@@ -102,7 +107,12 @@
                 </div>
             </div>
         </article>
-
+<script>
+    let loader = document.querySelector(".loader-box");
+    window.onload = function(){
+        loader.style.display = "none";
+    }
+</script>
 
     </body>
 

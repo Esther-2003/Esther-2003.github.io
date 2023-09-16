@@ -10,6 +10,9 @@
     </head>
 
     <body>
+        <div class="loader-box">
+            <img class="loader" src="imges/urlicon/icon-星星8.png" />
+        </div>
         <!-- <header> -->
         <img class="background-img2" src="imges/壁炉pexels-vilnis-husko-6832346(1).jpg" />
         <div class="cover"></div>
@@ -30,8 +33,9 @@
                     <textarea class="fire-page" id="" cols="30" rows="10" placeholder="在这里写下任何想写的东西，然后丢进火炉。——————!!!它们不会以任何形式留下!!!"></textarea>
 
                     <!-- <div class="felxbox"> -->
-                    <button type="submit" class="send">
-                        <img class="send-icon" src="imges/发送浅灰.png" />
+                    <button type="submit" class="fire-send">
+                        <img class="send-icon fire-send-icon" src="imges/发送浅灰.png" />
+                        <!-- <div class="fire"></div> -->
                     </button>
                 </form>
                 <br style="clear: both;" />
@@ -39,6 +43,19 @@
         </div>
         <!-- </div> -->
         <!-- </article> -->
+        <script>
+            let loader = document.querySelector(".loader-box");
+            window.onload = function(){
+                loader.style.display = "none";
+            }
+        </script>
+        <script>
+            const button = document.querySelector('button');
+const send = document.querySelector('.fire-send');
+button.addEventListener('click', () =>{
+send.classList.toggle('fire');
+});
+        </script>
     </body>
 
 </html>

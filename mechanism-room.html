@@ -10,6 +10,9 @@
     </head>
 
     <body>
+        <div class="loader-box">
+            <img class="loader" src="imges/urlicon/icon-星星8.png" />
+        </div>
         <!-- <header> -->
         <img class="background-img2" src="imges/机关室pexels-rdne-stock-project-7978061(1).jpg" />
         <div class="cover"></div>
@@ -26,6 +29,12 @@
         </div>
         <!-- </div> -->
         <!-- </article> -->
+        <script>
+            let loader = document.querySelector(".loader-box");
+            window.onload = function(){
+                loader.style.display = "none";
+            }
+        </script>
     </body>
 
 </html>

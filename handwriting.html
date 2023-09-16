@@ -10,6 +10,9 @@
     </head>
 
     <body>
+        <div class="loader-box">
+            <img class="loader" src="imges/urlicon/icon-星星8.png" />
+        </div>
         <!-- <bod class="HW-home"> -->
         <!-- <header> -->
         <img class="background-img" src="imges/手写pexels-tatiana-syrikova-3932734(1).jpg" />
@@ -63,6 +66,12 @@
         </div></div>
         <!-- </div> -->
         <!-- </article> -->
+        <script>
+            let loader = document.querySelector(".loader-box");
+            window.onload = function(){
+                loader.style.display = "none";
+            }
+        </script>
     </body>
 
 </html>
