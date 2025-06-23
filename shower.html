@@ -14,25 +14,41 @@
             <img class="loader" src="imges/urlicon/icon-星星8.png" />
         </div>
         <!-- <header> -->
-        <img class="background-img" src="imges\Miriam Espacio图片.jpeg" />
-        <div class="cover"></div>
+        <img class="background-img2" src="imges/浴室.jpg" />
+        <div class="cover shower-cover">
         <!-- <nav>
             <a href="index.html">&larr;</a>
         </nav> -->
         <!-- </header> -->
         <!-- <article> -->
         <!-- <div class="backpage"> -->
-        <div class="machexh">
+        <!-- <div class="shower-page"> -->
             <div class="intropage">
-                <div class="intro">这里还没建好。</div>
-            </div>
-        </div>
+                <div class="intro5">这是一个魔法浴室。
+                <div>在这里，你可以通过冥想，想象自己在洗澡。</div></div>
+            </div></div>
+        <!-- </div> -->
         <!-- </div> -->
         <!-- </article> -->
         <script>
             let loader = document.querySelector(".loader-box");
             window.onload = function(){
                 loader.style.display = "none";
+            }
+        </script>
+        <script>
+            let tips = document.querySelector('.cover');
+            let flag = 1;            
+            document.onselectstart=new Function("return false");// 取消双击蓝色
+            window.onclick = function(){
+                if(flag == 1){
+                    tips.style.visibility = 'hidden';
+                    flag = 0;
+                }
+                else{
+                    tips.style.visibility = 'visible';
+                    flag = 1;
+                }
             }
         </script>
     </body>
