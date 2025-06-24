@@ -231,7 +231,13 @@ div {
     margin:20px;
     max-width: 100%;
 }
-
+.intro5{
+    color: #ffffffe5;
+    font-size: 20px;
+    margin:20px;
+    max-width: 100%;
+    text-shadow: 0 0 0px #ffffffff,0 0 2px #0d0d0dfe;
+}
 .background-img {
     z-index: -3;
     position: fixed;
@@ -447,16 +453,113 @@ div {
     height: 200px;
     box-shadow: 0px 0px 3px 0px rgba(110, 110, 110, 0.5);
 }
-
+.work-name{
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffa6;
+}
 .machroom {
     background-attachment: fixed;
     background-image: url('imges/机关室pexels-pixabay-256477.jpg');
     /* position: relative; */
 }
-
+.shower-cover{
+    background-image: radial-gradient(rgba(255, 255, 255, 0.085) 0, rgba(252, 252, 252, 0.321) 100%),radial-gradient(rgba(255, 255, 255, 0.085) 65%, rgba(252, 252, 252, 0.029) 130%);
+    /* display: flex;
+    text-align: center;
+    align-items: center; */
+}
+.shower-page{
+    background-color: #ffffff2a;
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh auto;
+}
 .machexh {
     width: 100vw;
     height: 100vh;
+}
+.rainspell{
+    width: 200px;
+    height: 400px;
+
+    position: relative;
+}
+
+.cloud{
+    position: relative;
+    top:100px;
+/* background : url("images/logo.png") no-repeat; */
+   
+    width: 200px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 60px;
+    box-shadow: 0 0 5px 5px #fff;
+}
+.cloud::before{
+    content:"";
+    position: absolute;
+    top:-35px;
+    left:30px;
+    /* -webkit-mask : url("imges/机关/皇帝的cloud.PNG"); */
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px #fff;
+}
+.cloud::after{
+    content:"";
+    position: absolute;
+    top:-45px;
+    left:80px;
+    /* -webkit-mask : url("imges/机关/皇帝的cloud.PNG"); */
+    width: 90px;
+    height: 90px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow:  0 0 5px 5px #fff;
+}
+.rain{
+    position: relative;
+    display: flex;
+justify-content: center;
+    top:50px;
+}
+.rain span{
+    position: relative;
+    width: 1px;
+    height: 15px;
+    bottom: 10px;
+    margin:0 5px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.279),rgba(255, 255, 255, 0.614));
+
+    animation: raining 5s linear infinite;
+    animation-duration: calc(15s/var(--i));
+}
+@keyframes raining {
+    0%{
+        transform: translateY(0) scale(1);
+    }
+    70%{
+        transform: translateY(300px) scale(1);
+    }
+    100%{
+        transform: translateY(300px) scale(0);
+    }
+}
+.spell-intro{
+    /* width: 100%; */
+    font-size: 20px;
+    color: #ffffffa1;
+    text-align:center;
+    margin-top: 300px;
+
+/* margin: 0 auto; */
+    /* position: absolute; */
+    bottom: 0;
+    /* left: 32%; */
 }
 .messages-list{
     margin: 5vh 10vw;
@@ -1026,6 +1129,12 @@ height: 100%;
     .machexh {
         width: 100vw;
         height: 100vh;
+    }
+    .shower-cover{
+        background-image: radial-gradient(rgba(255, 255, 255, 0.085) 0, rgba(252, 252, 252, 0.321) 100%),radial-gradient(rgba(255, 255, 255, 0.085) 65%, rgba(252, 252, 252, 0.029) 130%);
+        /* display: flex;
+        text-align: center;
+        align-items: center; */
     }
     .messages-list {
         padding-top: 20px;

@@ -30,7 +30,8 @@
                     &emsp;你可以在这里写下任何你想写的烦心事/无人倾诉的困扰/无法宣泄的怒火/没有答案的问题...总之你可以写下任何东西，然后点击发送按钮，它们将会被扔进火炉烧掉，不会以任何形式留下。</div>
                 <form class="write-send">
 
-                    <textarea class="fire-page" id="" cols="30" rows="10" placeholder="在这里写下任何想写的东西，然后丢进火炉。——————!!!它们不会以任何形式留下!!!"></textarea>
+                    <textarea class="fire-page" id="" cols="30" rows="10"
+                        placeholder="在这里写下任何想写的东西，然后丢进火炉。——————!!!它们不会以任何形式留下!!!"></textarea>
 
                     <!-- <div class="felxbox"> -->
                     <button type="submit" class="fire-send">
@@ -45,16 +46,16 @@
         <!-- </article> -->
         <script>
             let loader = document.querySelector(".loader-box");
-            window.onload = function(){
+            window.onload = function () {
                 loader.style.display = "none";
             }
         </script>
         <script>
             const button = document.querySelector('button');
-const send = document.querySelector('.fire-send');
-button.addEventListener('click', () =>{
-send.classList.toggle('fire');
-});
+            const send = document.querySelector('.fire-send');
+            button.addEventListener('click', () => {
+                send.classList.toggle('fire');
+            });
         </script>
     </body>
 
